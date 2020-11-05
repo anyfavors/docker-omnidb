@@ -8,6 +8,7 @@ RUN apk add --no-cache --virtual .build-deps curl unzip g++ python3-dev openldap
       && apk add --no-cache make wget llvm \
       && apk add --no-cache --update python3 \
       && pip3 install --upgrade pip \
+      && pip3 install --upgrade wheel \
       && apk add postgresql-dev libffi-dev \
       && pip3 install psycopg2 \
       && pip3 install cffi \
