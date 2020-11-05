@@ -4,7 +4,7 @@ MAINTAINER Taivo Käsper <taivo.kasper@gmail.com>
 
 ENV OMNIDB_VERSION 3.0.2b
 
-RUN apk add --no-cache --virtual .build-deps curl unzip g++ python3-dev libldap2-dev\
+RUN apk add --no-cache --virtual .build-deps curl unzip g++ python3-dev openldap-dev\
       && apk add --no-cache make wget llvm \
       && apk add --no-cache --update python3 \
       && pip3 install --upgrade pip \
